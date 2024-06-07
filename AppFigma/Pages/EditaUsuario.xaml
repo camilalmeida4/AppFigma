@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppFigma.Pages.EditaUsuario"
+             NavigationPage.HasNavigationBar="False"
+             Title="EditaUsuario"
+             BackgroundImageSource="registrar3.png"
+             BackgroundColor="Black">
+    
+    <VerticalStackLayout 
+                 Margin="60"
+                 Padding="20">
+        
+       <Label 
+           TextColor="Black"
+           VerticalOptions="Center"
+           HorizontalOptions="Center"
+           FontSize="Title"
+           FontFamily="PTSerif-BoldItalic"/>
+
+        <Label x:Name="lblNome"
+           TextColor="Black"
+           FontSize="Subtitle"/>
+
+        <Entry x:Name="txtNome"
+           Text="{Binding Nome}"
+           Placeholder="Digite seu Nome"
+           Keyboard="Text"/>
+
+        <Label x:Name="lblEmail"
+               TextColor="Black"
+               FontSize="Subtitle"/>
+
+        <Entry x:Name="txtEmail"
+               Text="{Binding Email}"
+               Placeholder="Digite seu Email"
+               Keyboard="Email"/>
+
+        <Label x:Name="lblSenha"
+               FontSize="Subtitle"
+               TextColor="Black"/>
+
+        <Entry Placeholder="Digite sua Senha"
+               x:Name="txtSenha"
+               Text="{Binding Senha}"
+               IsPassword="True"/>
+
+        <Label x:Name="lblConfirmarSenha"
+               FontSize="Subtitle"
+               TextColor="Black"/>
+
+        <Entry Placeholder="Confirme sua Senha"
+               x:Name="txtConfirmarSenha"
+               Text="{Binding Senha}"
+               IsPassword="True"/>
+
+        <Button Margin="20"
+                Text="Cadastrar"
+                TextColor="Black"
+                WidthRequest="250"
+                x:Name="btnCadastrar"
+                Clicked="btnCadastrar_Clicked"
+                BackgroundColor="#819C92"/>
+
+        <Button Text="Voltar"
+                TextColor="Black"
+                WidthRequest="250"
+                x:Name="btnVoltar"
+                Clicked="btnVoltar_Clicked"
+                BackgroundColor="#819C92"/>
+
+    </VerticalStackLayout>
+</ContentPage>

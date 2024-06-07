@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppFigma.Pages.Perfil"
+             Title="Perfil"
+             BackgroundImageSource="fundoperfil.png"
+             BackgroundColor="Black"
+             NavigationPage.HasNavigationBar="False">
+    
+    <VerticalStackLayout 
+          Margin="30"
+          Padding="20"
+          Spacing="5">
+
+        <ImageButton Source="profileicon.svg" x:Name="ftPerfil" CornerRadius="100" WidthRequest="120" Margin="0,-300,0,0" />
+
+        <Label 
+          TextColor="Black"
+          VerticalOptions="Center"
+          HorizontalOptions="Center"
+          FontSize="Title"
+          FontFamily="PTSerif-BoldItalic"/>
+
+        <Label x:Name="lblNome"
+           TextColor="Black"
+           FontSize="Subtitle"/>
+
+
+        <Entry x:Name="txtNome" Margin="10,-370,20,0"
+             Text="{Binding Nome}"
+             Placeholder="Nome Completo:"             
+             Keyboard="Text"
+             />
+
+        <Label x:Name="lblEmail"
+        TextColor="Black"
+        FontSize="Subtitle"
+        HorizontalTextAlignment="Center"/>
+
+        <Entry x:Name="txtEmail" Margin="10,0,20,0"
+        Text="{Binding Email}"
+        Placeholder="Email:"
+        Keyboard="Email"/>
+
+        <Label x:Name="lblTelefone"
+           TextColor="Black"
+           FontSize="Subtitle"/>
+
+        <Entry x:Name="txtTelefone" Margin="10,0,20,0"
+           Text="{Binding Email}"
+           Placeholder="Telefone:"
+           Keyboard="Text"/>
+
+        <Label x:Name="lblEndereço"
+           TextColor="Black"
+           FontSize="Subtitle"/>
+
+        <Entry x:Name="txtEndereço" Margin="10,0,20,0"
+            Text="{Binding Email}"
+            Placeholder="Endereço:"
+            Keyboard="Email"/>
+
+
+        <Label x:Name="lblSenha"
+            FontSize="Subtitle"
+            TextColor="Black"/>
+
+        <Entry Placeholder="Digite sua Senha" Margin="10,0,20,0"
+               x:Name="txtSenha"
+               Text="{Binding Senha}"
+               IsPassword="True"/>
+
+       <Button Text="Atualize seu perfil"
+            TextColor="Black"
+            WidthRequest="250"
+            x:Name="btnAtualizar"
+            Clicked="btnAtualizar_Clicked"
+            BackgroundColor="#819C92"/>
+
+    </VerticalStackLayout>
+</ContentPage>

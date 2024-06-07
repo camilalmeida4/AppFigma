@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppFigma.Pages.Artistas"
+             NavigationPage.HasNavigationBar="False"
+             Title="Artistas"
+             BackgroundImageSource="fundoartistas.png"
+             BackgroundColor="Black">
+    <VerticalStackLayout>
+        <Label Text="Vincent van Gogh" Margin="70,20,0,0" HorizontalOptions="Center" FontSize="25" FontAttributes="Bold"/>
+        <Label 
+            Margin="100,5,0,0"
+            Text="Vincent van Gogh (1853-1890) foi um pintor pós-impressionista holandês conhecido por suas obras expressivas, uso audacioso de cores e técnicas únicas de pinceladas. Apesar de produzir maisde 2.000 obras em 10 anos, ele enfrentou dificuldades financeiras e problemas de saúde mental ao longo de sua vida. Van Gogh é famoso por séries de pinturas como Os Girassóis e A Noite Estrelada. Infelizmente, ele cometeu suicídio aos 37 anos, mas seu legado artístico o tornou um dos artistas mais importantes da história da arte."
+           FontSize="14" />
+
+
+        <Label Text="Claude Monet" Margin="70,80,0,0" HorizontalOptions="Center" FontSize="25" FontAttributes="Bold"/>
+
+        <Label 
+     Margin="100,5,0,0"
+        Text="Claude Monet (1840-1926) foi um pintor francês e um dos fundadores do movimento impressionista na arte. Ele é conhecido por suas paisagens vibrantes, uso inovador de cores e captura única da luz e atmosfera em suas obras. Monet é famoso por séries de pinturas como Nenúfares, Catedral de Rouen e Casas em Bordéus. Ele foi um artista prolífico e influente, que desafiou as convenções artísticas de sua época e criou um estilo distintamente impressionista que teve um impacto duradouro na arte moderna."
+            FontSize="14" />
+
+
+    </VerticalStackLayout>
+</ContentPage>

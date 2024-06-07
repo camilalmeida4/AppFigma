@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppFigma.Pages.Sobre"
+             NavigationPage.HasNavigationBar="False"
+             Title="Sobre"
+             BackgroundImageSource="fundosobre.png"
+             BackgroundColor="Black">
+    <VerticalStackLayout>
+        <Image Source=" infiniteart.svg"></Image>
+        
+        <Grid >
+            <HorizontalStackLayout>
+            <Grid VerticalOptions="Start" Margin="0,0,-20,0"  BackgroundColor="Black">
+            <Label></Label>
+        </Grid>
+            <Label Margin="150,170" WidthRequest="250" 
+            Text="Infinite Art é um aplicativo inovador que conecta amantes da arte, colecionadores e curiosos ao vasto universo das obras de arte, disponível para iOS e Android. Ele oferece um acervo abrangente que inclui desde obras clássicas até contemporâneas, permitindo uma navegação fácil por períodos históricos, estilos e artistas.
+O aplicativo se destaca pela acessibilidade, oferecendo uma versão gratuita com amplo conteúdo e uma versão premium com recursos exclusivos. Parcerias com museus garantem um acervo constantemente atualizado."
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" /> </HorizontalStackLayout>
+        </Grid>
+   
+    </VerticalStackLayout>
+</ContentPage>

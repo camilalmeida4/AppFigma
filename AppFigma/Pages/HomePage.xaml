@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppFigma.Pages.HomePage"
+             Title="HomePage"
+             BackgroundImageSource="fundohome.png"
+             BackgroundColor="Black"
+             NavigationPage.HasNavigationBar="False">
+    <VerticalStackLayout>
+
+        
+
+        <Label 
+            Margin="85,180"
+            Text="Bem-vindo ao nosso aplicativo de arte, onde as magníficas obras de Vincent van Gogh e Claude Monet ganham vida na ponta dos dedos. Prepare-se para uma jornada envolvente através da genialidade artística desses ícones do mundo.
+Neste aplicativo, você poderá explorar as telas ricas e vibrantes de Van Gogh, com pinceladas expressivas e cores intensas que capturam a emoção humana e a beleza do mundo natural. Nosso aplicativo oferece uma experiência interativa que permite explorar de perto cada detalhe dessas obras-primas, com ferramentas de zoom e análises realizadas. Além
+Seja você um estudante de arte, um artista ou um amante da beleza, nosso aplicativo oferece uma oportunidade única de se conectar com o mundo de Van Gogh. "
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            
+            />
+
+    </VerticalStackLayout>
+</ContentPage>

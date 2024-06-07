@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppFigma.Pages.Obras"
+             NavigationPage.HasNavigationBar="False"
+             Title="Obras"
+             BackgroundImageSource="fundoobras.png">
+
+    <VerticalStackLayout>
+
+        <FlexLayout Margin="0, 20, 0, 20">
+            <Image Margin="10, 0, 0, 0" Source="noiteestrelada.png" WidthRequest="150" HeightRequest="250"/>
+            <Image Margin="25, 0, 0, 0" Source="lagoadelirios.png" WidthRequest="150" HeightRequest="250"/>
+        </FlexLayout>
+        <FlexLayout Margin="0, 20, 0, 20">
+            <Image Margin="10, 0, 0, 0" Source="amendoeiraemflor.png" WidthRequest="150" HeightRequest="250"/>
+            <Image Margin="25, 0, 0, 0" Source="impressaoaosol.png" WidthRequest="150" HeightRequest="250"/>
+        </FlexLayout>
+
+    </VerticalStackLayout>
+</ContentPage>

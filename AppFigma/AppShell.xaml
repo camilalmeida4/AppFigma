@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="AppFigma.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:AppFigma"
+    xmlns:pages="clr-namespace:AppFigma.Pages"
+    Shell.FlyoutBehavior="Flyout"
+    Title="AppFigma">
+
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Style TargetType="FlyoutItem">
+                <Setter Property="Shell.BackgroundColor" Value="#819C92" />
+                <Setter Property="Shell.ForegroundColor" Value="Black" />
+                <Setter Property="Shell.TitleColor" Value="Black" />
+                <Setter Property="Shell.DisabledColor" Value="Gray" />
+                <Setter Property="Shell.UnselectedColor" Value="Gray" />
+            </Style>
+        </ResourceDictionary>
+    </Shell.Resources>
+
+    <FlyoutItem Title="Home" Icon="brushicon.svg">
+        <ShellContent Route="home" ContentTemplate="{DataTemplate pages:HomePage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Obras" Icon="brushicon.svg">
+        <ShellContent Route="obras" ContentTemplate="{DataTemplate pages:Obras}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Artistas" Icon="brushicon.svg">
+        <ShellContent Route="artistas" ContentTemplate="{DataTemplate pages:Artistas}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Sobre" Icon="brushicon.svg">
+        <ShellContent Route="sobre" ContentTemplate="{DataTemplate pages:Sobre}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Perfil" Icon="brushicon.svg">
+        <ShellContent Route="perfil" ContentTemplate="{DataTemplate pages:Perfil}" />
+    </FlyoutItem>
+
+</Shell>
